@@ -1,6 +1,6 @@
-CREATE DATABASE HOSPITAL4
+CREATE DATABASE HOSPITAL
 GO
-USE HOSPITAL4
+USE HOSPITAL
 GO
 
 --CREAR TABLAS--
@@ -29,8 +29,8 @@ CREATE TABLE DOCTORES (
 	DOCAPEPAT VARCHAR(25) NOT NULL,
 	DOCAPEMAT VARCHAR(25),
 	DOCDOMICILIO VARCHAR (50),
-    DOCRFC VARCHAR (13) NOT†NULL,
-	DOCCURP VARCHAR (18) NOT†NULL,
+    DOCRFC VARCHAR (13) NOT¬†NULL,
+	DOCCURP VARCHAR (18) NOT¬†NULL,
 	DOCFECHANACIMIENTO DATE NOT NULL,
 	DOCTEL VARCHAR (10),
 	DOCSEXO CHAR(1))
@@ -55,9 +55,9 @@ GO
 CREATE TABLE MEDICAMENTOS(
     MEDID INT NOT NULL,
     MEDNOMBRE VARCHAR(25) NOT NULL,
-    MEDDESCRIPCION VARCHAR (50) NOT†NULL,
+    MEDDESCRIPCION VARCHAR (50) NOT¬†NULL,
     SUSACTIVA VARCHAR (50) NOT NULL,
-    MEDPRECIO DECIMAL (10, 2) NOT†NULL,
+    MEDPRECIO DECIMAL (10, 2) NOT¬†NULL,
     LABID INT NOT NULL)
 GO
 CREATE TABLE RECETAS(
@@ -187,41 +187,41 @@ GO
 -- Insertar 5 registros en la tabla ESPECIALIDADES
 INSERT INTO ESPECIALIDADES (ESPID, ESPNOMBRE)
 VALUES 
-    (1, 'CardiologÌa'),
-    (2, 'PediatrÌa'),
-    (3, 'DermatologÌa'),
-    (4, 'NeurologÌa'),
-    (5, 'GastroenterologÌa')
+    (1, 'Cardiolog√≠a'),
+    (2, 'Pediatr√≠a'),
+    (3, 'Dermatolog√≠a'),
+    (4, 'Neurolog√≠a'),
+    (5, 'Gastroenterolog√≠a')
 GO
 
 -- Insertar 5 registros en la tabla PACIENTES
 INSERT INTO PACIENTES (PACID, PACNOMBRE, PACAPEPAT, PACAPEMAT, PACDOMICILIO, PACFECHANACIMIENTO, PACTEL, PACSEXO, PACCORREO)
 VALUES 
-    (1, 'Juan', 'PÈrez', 'Gonz·lez', 'Calle 123, Colonia ABC', '2000-05-15', '5551234567', 'M', 'juan@example.com'),
-    (2, 'MarÌa', 'LÛpez', 'GarcÌa', 'Av. Principal, Colonia XYZ', '1995-08-20', '5559876543', 'F', 'maria@example.com'),
-    (3, 'Carlos', 'RodrÌguez', 'MartÌnez', 'Calle Central, Colonia LMN', '2010-03-10', '5557778888', 'M', 'carlos@example.com'),
-    (4, 'Laura', 'GÛmez', 'S·nchez', 'Av. Hospitalaria, Colonia Salud', '1992-11-25', '5555555555', 'F', 'laura@example.com'),
-    (5, 'JosÈ', 'Hern·ndez', 'Lara', 'Calle de los NiÒos, Colonia Infantil', '2015-09-05', '5554443333', 'M', 'jose@example.com')
+    (1, 'Juan', 'P√©rez', 'Gonz√°lez', 'Calle 123, Colonia ABC', '2000-05-15', '5551234567', 'M', 'juan@example.com'),
+    (2, 'Mar√≠a', 'L√≥pez', 'Garc√≠a', 'Av. Principal, Colonia XYZ', '1995-08-20', '5559876543', 'F', 'maria@example.com'),
+    (3, 'Carlos', 'Rodr√≠guez', 'Mart√≠nez', 'Calle Central, Colonia LMN', '2010-03-10', '5557778888', 'M', 'carlos@example.com'),
+    (4, 'Laura', 'G√≥mez', 'S√°nchez', 'Av. Hospitalaria, Colonia Salud', '1992-11-25', '5555555555', 'F', 'laura@example.com'),
+    (5, 'Jos√©', 'Hern√°ndez', 'Lara', 'Calle de los Ni√±os, Colonia Infantil', '2015-09-05', '5554443333', 'M', 'jose@example.com')
 GO
 
 -- Insertar 5 registros en la tabla DOCTORES
 INSERT INTO DOCTORES (DOCID, DOCNOMBRE, DOCAPEPAT, DOCAPEMAT, DOCDOMICILIO, DOCRFC, DOCCURP, DOCFECHANACIMIENTO, DOCTEL, DOCSEXO)
 VALUES 
-    (1, 'Dr. Ana', 'GÛmez', 'S·nchez', 'Hospital A, Colonia ABC', 'ABCG8901234A5', 'GOSA890123HDFPLR09', '1970-10-05', '5551112222', 'F'),
-    (2, 'Dr. Jorge', 'Lara', 'Hern·ndez', 'Hospital B, Colonia XYZ', 'XYZJ750912A2', 'LAHJ750912HDFPLR05', '1980-08-15', '5553334444', 'M'),
-    (3, 'Dra. Laura', 'Soto', 'PÈrez', 'Hospital C, Colonia LMN', 'LMNP820731G34', 'SPLA820731HDFPLR02', '1978-07-31', '5555555555', 'F'),
-    (4, 'Dr. Carlos', 'MartÌnez', 'Gonz·lez', 'Hospital D, Colonia Salud', 'CMGS950528ABC', 'MAGC950528HDFPLR08', '1995-05-28', '5557778888', 'M'),
-    (5, 'Dra. Patricia', 'Hern·ndez', 'LÛpez', 'Hospital E, Colonia Salud', 'PHLL880712ABC', 'LALH880712HDFPLR04', '1988-07-12', '5559991111', 'F')
+    (1, 'Dr. Ana', 'G√≥mez', 'S√°nchez', 'Hospital A, Colonia ABC', 'ABCG8901234A5', 'GOSA890123HDFPLR09', '1970-10-05', '5551112222', 'F'),
+    (2, 'Dr. Jorge', 'Lara', 'Hern√°ndez', 'Hospital B, Colonia XYZ', 'XYZJ750912A2', 'LAHJ750912HDFPLR05', '1980-08-15', '5553334444', 'M'),
+    (3, 'Dra. Laura', 'Soto', 'P√©rez', 'Hospital C, Colonia LMN', 'LMNP820731G34', 'SPLA820731HDFPLR02', '1978-07-31', '5555555555', 'F'),
+    (4, 'Dr. Carlos', 'Mart√≠nez', 'Gonz√°lez', 'Hospital D, Colonia Salud', 'CMGS950528ABC', 'MAGC950528HDFPLR08', '1995-05-28', '5557778888', 'M'),
+    (5, 'Dra. Patricia', 'Hern√°ndez', 'L√≥pez', 'Hospital E, Colonia Salud', 'PHLL880712ABC', 'LALH880712HDFPLR04', '1988-07-12', '5559991111', 'F')
 GO
 
 -- Insertar 5 registros en la tabla HOSPITALES
 INSERT INTO HOSPITALES (HOSID, HOSNOMBRE, HOSDOMICILIO, HOSTEL)
 VALUES 
     (1, 'Hospital General', 'Av. Principal, Colonia Hospitalaria', '5551237890'),
-    (2, 'Hospital Pedi·trico', 'Calle de los NiÒos, Colonia Infantil', '5559876543'),
-    (3, 'Hospital DermatolÛgico', 'Av. de la Piel, Colonia Dermis', '5551112222'),
-    (4, 'Hospital NeurolÛgico', 'Av. del Cerebro, Colonia Neuro', '5554445555'),
-    (5, 'Hospital Gastro', 'Calle de la DigestiÛn, Colonia Gastro', '5553332222')
+    (2, 'Hospital Pedi√°trico', 'Calle de los Ni√±os, Colonia Infantil', '5559876543'),
+    (3, 'Hospital Dermatol√≥gico', 'Av. de la Piel, Colonia Dermis', '5551112222'),
+    (4, 'Hospital Neurol√≥gico', 'Av. del Cerebro, Colonia Neuro', '5554445555'),
+    (5, 'Hospital Gastro', 'Calle de la Digesti√≥n, Colonia Gastro', '5553332222')
 GO
 
 -- Insertar 5 registros en la tabla CONSULTORIO
@@ -237,21 +237,21 @@ GO
 -- Insertar 5 registros en la tabla LABORATORIO
 INSERT INTO LABORATORIOS(LABID, LABNOMBRE, LABDOMICILIO, LABTEL)
 VALUES 
-    (1, 'Laboratorio ClÌnico', 'Calle de las Pruebas, Colonia An·lisis', '5557778888'),
-    (2, 'Laboratorio de Im·genes', 'Av. de las RadiografÌas, Colonia RadiologÌa', '5554443333'),
-    (3, 'Laboratorio de GenÈtica', 'Av. del ADN, Colonia GenÛmica', '5559991111'),
-    (4, 'Laboratorio de NeurologÌa', 'Calle de las Neuronas, Colonia Neuromed', '5552223333'),
-    (5, 'Laboratorio de GastroenterologÌa', 'Av. del EstÛmago, Colonia Gastro', '5555545555')
+    (1, 'Laboratorio Cl√≠nico', 'Calle de las Pruebas, Colonia An√°lisis', '5557778888'),
+    (2, 'Laboratorio de Im√°genes', 'Av. de las Radiograf√≠as, Colonia Radiolog√≠a', '5554443333'),
+    (3, 'Laboratorio de Gen√©tica', 'Av. del ADN, Colonia Gen√≥mica', '5559991111'),
+    (4, 'Laboratorio de Neurolog√≠a', 'Calle de las Neuronas, Colonia Neuromed', '5552223333'),
+    (5, 'Laboratorio de Gastroenterolog√≠a', 'Av. del Est√≥mago, Colonia Gastro', '5555545555')
 GO
 
 -- Insertar 5 registros en la tabla MEDICAMENTOS
 INSERT INTO MEDICAMENTOS (MEDID, MEDNOMBRE, MEDDESCRIPCION, SUSACTIVA, MEDPRECIO, LABID)
 VALUES 
-    (1, 'Aspirina', 'AnalgÈsico', '¡cido acetilsalicÌlico', 5.99, 1),
+    (1, 'Aspirina', 'Analg√©sico', '√Åcido acetilsalic√≠lico', 5.99, 1),
     (2, 'Ibuprofeno', 'Antiinflamatorio', 'Ibuprofeno', 7.99, 1),
-    (3, 'Paracetamol', 'AnalgÈsico', 'Paracetamol', 4.99, 2),
-    (4, 'Amoxicilina', 'AntibiÛtico', 'Amoxicilina', 8.99, 3),
-    (5, 'Omeprazol', 'Anti·cido', 'Omeprazol', 6.99, 4)
+    (3, 'Paracetamol', 'Analg√©sico', 'Paracetamol', 4.99, 2),
+    (4, 'Amoxicilina', 'Antibi√≥tico', 'Amoxicilina', 8.99, 3),
+    (5, 'Omeprazol', 'Anti√°cido', 'Omeprazol', 6.99, 4)
 GO
 
 -- Insertar 5 registros en la tabla RECETAS
