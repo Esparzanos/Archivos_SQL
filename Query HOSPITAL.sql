@@ -274,33 +274,3 @@ VALUES
     (4, 4),
     (5, 5)
 GO
-
--- Mostrar todos los registros de la tabla PACIENTES
-SELECT * FROM PACIENTES;
-
--- Mostrar todos los registros de la tabla ESPECIALIDADES
-SELECT * FROM ESPECIALIDADES;
-
--- Mostrar todos los registros de la tabla DOCTORES
-SELECT * FROM DOCTORES;
-
--- Mostrar todos los registros de la tabla HOSPITALES
-SELECT * FROM HOSPITALES;
-
--- Mostrar todos los registros de la tabla CONSULTORIOS
-SELECT * FROM CONSULTORIOS;
-
--- Mostrar todos los registros de la tabla LABORATORIOS
-SELECT * FROM LABORATORIOS;
-
--- Mostrar todos los registros de la tabla MEDICAMENTOS
-SELECT * FROM MEDICAMENTOS;
-
--- Mostrar todos los registros de la tabla RECETAS
-SELECT * FROM RECETAS;
-
--- Mostrar todos los registros de la tabla CITAS
-SELECT * FROM CITAS;
-
--- Mostrar todos los registros de la tabla DETALLES
-SELECT * FROM DETALLES;
