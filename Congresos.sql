@@ -131,7 +131,6 @@ ALTER TABLE EVENTOS ADD CHECK (EVEFECHA > GETDATE())
 GO
 
 --AGREGAR DATOS A LAS TABLAS--
--- Insertar 5 registros creativos en la tabla CONGRESOS
 INSERT INTO CONGRESOS (CONID, CONNOMBRE, CONDESCRIPCION, CONFECHAINI, CONFECHAFIN, CONLUGAR)
 VALUES 
     (6, 'Simposio de Ciencia Ficción', 'Exploración de tecnología futurista', '2023-11-15', '2023-11-17', 'Estación Espacial'),
@@ -141,7 +140,6 @@ VALUES
     (10, 'Congreso de Extraterrestres', 'Encuentro intergaláctico', '2023-11-10', '2023-11-12', 'Planeta XZ-47')
 GO
 
--- Insertar 5 registros creativos en la tabla EXPOSITORES
 INSERT INTO EXPOSITORES (EXPID, EXPNOMBRE, EXPAPELLIDOS, EXPCORREO, EXPCELULAR)
 VALUES 
     (6, 'E.T.', 'el Extraterrestre', 'et@example.com', '9876543210'),
@@ -151,7 +149,6 @@ VALUES
     (10, 'Cthulhu', 'el Primigenio', 'cthulhu@example.com', '6666666666')
 GO
 
--- Insertar 5 registros creativos en la tabla EVENTOS
 INSERT INTO EVENTOS (EVEID, EVENOMBRE, EVEDESCRIPCION, EVEFECHA, EVELUGAR, EVECOSTO, EXPID)
 VALUES 
     (6, 'Exhibición de Tecnología Alienígena', 'Muestra de gadgets de otras galaxias', '2023-11-16', 'Área 51', 20.99, 6),
@@ -161,7 +158,6 @@ VALUES
     (10, 'Panel de Discusión Alienígena', 'Debatiendo sobre la vida extraterrestre', '2023-11-11', 'Universo Desconocido', 10.00, 10)
 GO
 
--- Insertar 5 registros creativos en la tabla MUNICIPIOS
 INSERT INTO MUNICIPIOS (MUNID, MUNNOMBRE)
 VALUES 
     (6, 'Mundo de Ensueño'),
@@ -171,7 +167,6 @@ VALUES
     (10, 'Planeta XZ-47')
 GO
 
--- Insertar 5 registros creativos en la tabla ESCUELAS
 INSERT INTO ESCUELAS (ESCID, ESCNOMBRE, ESCDOMICILIO, MUNID)
 VALUES 
     (6, 'Escuela de Ciencia Ficción', 'Avenida Futurista', 6),
@@ -181,7 +176,6 @@ VALUES
     (10, 'Escuela de Astrobiología', 'Carretera Intergaláctica', 10)
 GO
 
--- Insertar 5 registros creativos en la tabla ESTUDIANTES
 INSERT INTO ESTUDIANTES (ESTID, ESTNOMBRE, ESTAPELLIDOS, ESTDOMICILIO, ESTCORREO, ESTCELULAR, ESCID)
 VALUES 
     (6, 'Neo', 'Matrix', 'Matrix City', 'neo@example.com', '7777777777', 6),
@@ -191,7 +185,6 @@ VALUES
     (10, 'E.T.', 'el Extraterrestre', 'Bosque Encantado', 'et@example.com', '2222222222', 10)
 GO
 
--- Insertar 5 registros creativos en la tabla REGISTROS
 INSERT INTO REGISTROS (FOLIO, FECHA, ESTID, CONID)
 VALUES 
     (6, '2023-09-20', 6, 6),
@@ -201,7 +194,6 @@ VALUES
     (10, '2023-09-24', 10, 10)
 GO
 
--- Insertar 5 registros en la tabla EVENTOXREG sin conflictos
 INSERT INTO EVENTOXREG (FOLIO, EVEID)
 VALUES 
     (6, 6),
@@ -209,13 +201,3 @@ VALUES
     (8, 8),
     (9, 9),
     (10, 10);
-
-
-SELECT * FROM CONGRESOS;
-SELECT * FROM REGISTROS;
-SELECT * FROM EVENTOXREG;
-SELECT * FROM EVENTOS;
-SELECT * FROM EXPOSITORES;
-SELECT * FROM MUNICIPIOS;
-SELECT * FROM ESCUELAS;
-SELECT * FROM ESTUDIANTES;
